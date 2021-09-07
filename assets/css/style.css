@@ -310,6 +310,23 @@ b {
 
 }
 
-.character-select {
+.character-select,
+.token-img {
   margin-top: 80px;
+}
+
+.tokenomics {
+  background: linear-gradient(rgb(16, 26, 69) 0%, rgb(17, 112, 168) 100%) center center / cover no-repeat;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.roadmap {
+  position: relative;
+  background-image: url(../images/bg-timeline.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4.375rem;
+
 }
