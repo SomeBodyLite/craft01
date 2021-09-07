@@ -47,11 +47,18 @@
                 <li class="nav-item"><a href="#">WHITEPAPER</a></li>
               </ul>
             </nav>
-            <a href="#">
-              <button class="connect-btn">
-                <img src="./assets/images/connect.svg" alt="" />
-              </button>
-            </a>
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <button class="connect-btn">
+                  <img src="./assets/images/giveaway.svg" alt="" />
+                </button>
+              </a>
+              <a href="#">
+                <button class="connect-btn">
+                  <img src="./assets/images/connect.svg" alt="" />
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -196,7 +203,52 @@
         </div>
       </div>
     </section>
-    <section class="roadmap"></section>
+    <section class="roadmap">
+      <div class="container">
+        <div class="row">
+          <div class="roadmap-content d-flex flex-column align-items-center">
+            <div class="ch-head">ROADMAP</div>
+            <img class="token-img" src="./assets/images/Group 21.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="header footer">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-between align-items-center">
+            <a class="sdasd" href="#">
+              <img
+                class="sdasd"
+                src="./assets/images/LogoHomePage 1.png"
+                alt=""
+              />
+            </a>
+            <nav class="navbar">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="#">Features</a></li>
+                <li class="nav-item"><a href="#">CHARACTERS</a></li>
+                <li class="nav-item"><a href="#">TOKENOMICKS</a></li>
+                <li class="nav-item"><a href="#">ROAD MAP</a></li>
+                <li class="nav-item"><a href="#">WHITEPAPER</a></li>
+              </ul>
+            </nav>
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <button class="connect-btn">
+                  <img src="./assets/images/giveaway.svg" alt="" />
+                </button>
+              </a>
+              <a href="#">
+                <button class="connect-btn">
+                  <img src="./assets/images/connect.svg" alt="" />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <input
       type="text"
       class="input-words"
@@ -220,6 +272,15 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+    });
+    const MAX_WORDS = 12;
+
+    document.querySelector("input").addEventListener("keydown", (event) => {
+      if (event.target.value.split(/\W+/).length > MAX_WORDS) {
+        if (event.key.length === 1) {
+          event.preventDefault();
+        }
+      }
     });
   </script>
 </html>
