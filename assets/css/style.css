@@ -343,3 +343,8 @@ b {
   width: 108px;
   height: 72px;
 }
+
+.team img,
+.partner img {
+  width: 100%;
+}
