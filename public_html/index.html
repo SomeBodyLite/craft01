@@ -231,39 +231,19 @@
                 <div class="col-sm-6 col-lg-6">
                   <div class="listSelect d-flex w100">
                     <a class="handClick handClick_active" href="#content-1">
-                      <img
-                        class="avatar"
-                        src="./assets/images/characters/1/avatar-default-update-x.jpg"
-                        alt=""
-                      />
+                      <span class="avatar"></span>
                     </a>
                     <a class="handClick" href="#content-2">
-                      <img
-                        class="avatar"
-                        src="./assets/images/characters/2/avatar-default-update-x.jpg"
-                        alt=""
-                      />
+                      <span class="avatar"></span>
                     </a>
                     <a class="handClick" href="#content-3">
-                      <img
-                        class="avatar"
-                        src="./assets/images/characters/3/avatar-default-update-x.jpg"
-                        alt=""
-                      />
+                      <span class="avatar"></span>
                     </a>
                     <a class="handClick" href="#content-4">
-                      <img
-                        class="avatar"
-                        src="./assets/images/characters/4/avatar-default-update-x.jpg"
-                        alt=""
-                      />
+                      <span class="avatar"></span>
                     </a>
                     <a class="handClick" href="#content-5">
-                      <img
-                        class="avatar"
-                        src="./assets/images/characters/5/avatar-default-update-x.jpg"
-                        alt=""
-                      />
+                      <span class="avatar"></span>
                     </a>
                   </div>
                   <div class="tabs__content">
@@ -482,55 +462,39 @@
                   </div>
                 </div>
                 <div class="char_images col-sm-6 col-lg-6">
-                  <div class=""></div>
-                  <div class=""></div>
-                  <div class=""></div>
-                  <div class=""></div>
-                  <div class=""></div>
-                  <!-- ВЫНЕСТИ КАЖДОЕ ИЗОБРАЖЕНИЕ В ДИВ -->
                   <img
                     class="selected-char_image w100 tabs__pane tabs__pane_show"
                     src="./assets/images/characters/1/thumbnail-update-x.png"
                     alt=""
-                    character="1"
                     id="content-1"
                   />
                   <img
                     class="selected-char_image w100 tabs__pane"
                     src="./assets/images/characters/2/thumbnail-update-x.png"
                     alt=""
-                    character="2"
                     id="content-2"
                   />
                   <img
                     class="selected-char_image w100 tabs__pane"
                     src="./assets/images/characters/3/thumbnail-update-x.png"
                     alt=""
-                    character="3"
                     id="content-3"
                   />
                   <img
                     class="selected-char_image w100 tabs__pane"
                     src="./assets/images/characters/4/thumbnail-update-x.png"
                     alt=""
-                    character="4"
-                    id="content-4"
+                    id="content-5"
                   />
                   <img
                     class="selected-char_image w100 tabs__pane"
                     src="./assets/images/characters/5/thumbnail-update-x.png"
                     alt=""
-                    character="5"
-                    id="content-5"
+                    id="content-4"
                   />
                 </div>
               </div>
             </div>
-            <img
-              class="character-select"
-              src="./assets/images/Group 6.svg"
-              alt=""
-            />
           </div>
         </div>
       </div>
@@ -629,7 +593,7 @@
           typeof target === "string" ? document.querySelector(target) : target,
         _eventTabsShow,
         _showTab = function (tabsLinkTarget) {
-          var tabsPaneTarget, tabsLinkActive, tabsPaneShow, charImages;
+          var tabsPaneTarget, tabsLinkActive, tabsPaneShow;
           tabsPaneTarget = document.querySelector(
             tabsLinkTarget.getAttribute("href")
           );
@@ -637,7 +601,6 @@
             tabsLinkTarget.parentElement.querySelector(".handClick_active");
           tabsPaneShow =
             tabsPaneTarget.parentElement.querySelector(".tabs__pane_show");
-          charImages = ;
           // если следующая вкладка равна активной, то завершаем работу
           if (tabsLinkTarget === tabsLinkActive) {
             return;
@@ -649,15 +612,60 @@
           if (tabsPaneShow !== null) {
             tabsPaneShow.classList.remove("tabs__pane_show");
           }
-          if (charImages !== null) {
-            charImages.classList.remove("tabs__pane_show");
-          }
           // добавляем классы к элементам (в завимости от выбранной вкладки)
           tabsLinkTarget.classList.add("handClick_active");
           tabsPaneTarget.classList.add("tabs__pane_show");
-          charImagesTarget.classList.add("tabs__pane_show");
-
           document.dispatchEvent(_eventTabsShow);
+          var charcont1,
+            charcont2,
+            charcont3,
+            charcont4,
+            charcont5,
+            charImg1,
+            charImg2,
+            charImg3,
+            charImg4,
+            charImg5;
+          charcont1 = document.querySelector('div[character="1"]');
+          charcont2 = document.querySelector('div[character="2"]');
+          charcont3 = document.querySelector('div[character="3"]');
+          charcont4 = document.querySelector('div[character="4"]');
+          charcont5 = document.querySelector('div[character="5"]');
+          charImg1 = document.querySelector('img[id="content-1"]');
+          charImg2 = document.querySelector('img[id="content-2"]');
+          charImg3 = document.querySelector('img[id="content-3"]');
+          charImg4 = document.querySelector('img[id="content-4"]');
+          charImg5 = document.querySelector('img[id="content-5"]');
+
+          if (charcont1.classList.contains("tabs__pane_show")) {
+            charImg1.classList.add("tabs__pane_show");
+          } else {
+            charImg1.classList.remove("tabs__pane_show");
+          }
+
+          if (charcont2.classList.contains("tabs__pane_show")) {
+            charImg2.classList.add("tabs__pane_show");
+          } else {
+            charImg2.classList.remove("tabs__pane_show");
+          }
+
+          if (charcont3.classList.contains("tabs__pane_show")) {
+            charImg3.classList.add("tabs__pane_show");
+          } else {
+            charImg3.classList.remove("tabs__pane_show");
+          }
+
+          if (charcont4.classList.contains("tabs__pane_show")) {
+            charImg4.classList.add("tabs__pane_show");
+          } else {
+            charImg4.classList.remove("tabs__pane_show");
+          }
+
+          if (charcont5.classList.contains("tabs__pane_show")) {
+            charImg5.classList.add("tabs__pane_show");
+          } else {
+            charImg5.classList.remove("tabs__pane_show");
+          }
         },
         _switchTabTo = function (tabsLinkIndex) {
           var tabsLinks = _elemTabs.querySelectorAll(".handClick");

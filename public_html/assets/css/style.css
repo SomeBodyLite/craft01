@@ -445,9 +445,9 @@ b {
   background-color: #efefef;
 }
 
-.tabs__content {
+/* .tabs__content {
   padding: 1rem;
-}
+} */
 
 .tabs__pane {
   display: none;
@@ -455,4 +455,62 @@ b {
 
 .tabs__pane_show {
   display: block;
+}
+
+/* .listSelect > *.handClick_active{
+
+} */
+.handClick[href="#content-1"]>span {
+  display: block;
+  width: 90px;
+  height: 114px;
+  background: url(../images/characters/1/avatar-default-update-x.jpg);
+}
+
+.handClick[href="#content-2"]>span {
+  display: block;
+  width: 90px;
+  height: 114px;
+  background: url(../images/characters/2/avatar-default-update-x.jpg);
+}
+
+.handClick[href="#content-3"]>span {
+  display: block;
+  width: 90px;
+  height: 114px;
+  background: url(../images/characters/3/avatar-default-update-x.jpg);
+}
+
+.handClick[href="#content-4"]>span {
+  display: block;
+  width: 90px;
+  height: 114px;
+  background: url(../images/characters/4/avatar-default-update-x.jpg);
+}
+
+.handClick[href="#content-5"]>span {
+  display: block;
+  width: 90px;
+  height: 114px;
+  background: url(../images/characters/5/avatar-default-update-x.jpg);
+}
+
+.handClick[href="#content-1"].handClick_active>span {
+  background: url(../images/characters/1/avatar-active-update-x.jpg);
+}
+
+.handClick[href="#content-2"].handClick_active>span {
+  background: url(../images/characters/2/avatar-active-update-x.jpg);
+}
+
+.handClick[href="#content-3"].handClick_active>span {
+  background: url(../images/characters/3/avatar-active-update-x.jpg);
+}
+
+.handClick[href="#content-4"].handClick_active>span {
+  background: url(../images/characters/4/avatar-active-update-x.jpg);
+}
+
+.handClick[href="#content-5"].handClick_active>span {
+  background: url(../images/characters/5/avatar-active-update-x.jpg);
 }
