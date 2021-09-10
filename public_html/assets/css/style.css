@@ -54,6 +54,10 @@
   src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 img {
   pointer-events: none;
   user-select: none;
