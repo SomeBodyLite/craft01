@@ -538,6 +538,10 @@ b {
   background: url(../images/characters/5/avatar-active-update-x.jpg);
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 @media (max-width:1000px) {
   .contentText {
     width: 100%;
@@ -554,6 +558,10 @@ b {
   header .navbar,
   .header-buttons {
     display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
   }
 }
 
