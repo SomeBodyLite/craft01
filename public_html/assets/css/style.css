@@ -368,6 +368,7 @@ b {
 
 .avatar {
   margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .character-text {
@@ -531,5 +532,55 @@ b {
 
   body>*>* {
     width: 100%;
+  }
+}
+
+@media (max-width:1200px) {
+  .features-subcont {
+    flex-wrap: wrap;
+  }
+
+  .f-s-block {
+    width: 90%;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .listSelect {
+    flex-wrap: wrap;
+  }
+
+  .token-img {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  .ch-head {
+    font-size: xxx-large;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center
+  }
+
+  footer .navbar {
+    display: none;
+  }
+
+  .footer-buttons {
+    margin-top: 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-buttons>:first-child {
+    margin-bottom: 10px;
   }
 }
