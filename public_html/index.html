@@ -56,11 +56,15 @@
                   src="./assets/images/LogoHomePage 1.png"
                   alt=""
                 />
-                <li class="nav-item"><a href="#">Features</a></li>
-                <li class="nav-item"><a href="#">CHARACTERS</a></li>
-                <li class="nav-item"><a href="#">TOKENOMICKS</a></li>
-                <li class="nav-item"><a href="#">WHITEPAPER</a></li>
-                <li class="nav-item"><a href="#">ROAD&nbsp;MAP</a></li>
+                <li class="nav-item"><a id="bgrlnk" href="#">Features</a></li>
+                <li class="nav-item"><a id="bgrlnk" href="#">CHARACTERS</a></li>
+                <li class="nav-item">
+                  <a id="bgrlnk" href="#">TOKENOMICKS</a>
+                </li>
+                <li class="nav-item"><a id="bgrlnk" href="#">WHITEPAPER</a></li>
+                <li class="nav-item">
+                  <a id="bgrlnk" href="#">ROAD&nbsp;MAP</a>
+                </li>
                 <li class="nav-burger-btns">
                   <a href="#">
                     <button class="connect-btn">
@@ -736,6 +740,15 @@
     };
 
     $tabs(".tabs");
+  </script>
+  <script>
+    document.querySelector("[id=menu__toggle]").checked = false;
+    bgrlnktgl = document.querySelectorAll("[id=bgrlnk]");
+    for (var i = 0; i < bgrlnktgl.length; i++) {
+      bgrlnktgl[i].onclick = function () {
+        menu__toggle.checked = false;
+      };
+    }
   </script>
   <!-- <script>
     document.oncontextmenu = cmenu;
