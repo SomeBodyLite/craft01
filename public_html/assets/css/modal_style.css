@@ -1,4 +1,4 @@
-.wallet-modal{
+.wallet-modal {
     background: #000000eb;
     width: 100%;
     height: 100%;
@@ -10,7 +10,7 @@
     justify-content: center;
 }
 
-.wallet-bg{
+.wallet-bg {
     width: 605px;
     height: 340px;
     background: #4C6CAB;
@@ -21,7 +21,7 @@
     border-radius: 16px;
 }
 
-.wallet-container{
+.wallet-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +32,7 @@
     justify-content: space-between;
 }
 
-.wallet-title{
+.wallet-title {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -48,7 +48,7 @@
     flex-grow: 0;
 }
 
-.wallet-input-title{
+.wallet-input-title {
     font-style: bold;
     font-weight: bold;
     font-size: 12px;
@@ -67,8 +67,8 @@
     margin: 4px 0px;
 }
 
-.wallet-input-title.warning{
-    color:#ffe001;
+.wallet-input-title.warning {
+    color: #ffe001;
     font-weight: normal;
 }
 
@@ -94,7 +94,8 @@
     width: 100%;
     text-align: left;
     color: black;
-    padding-inline: calc(calc(var(--var-input-padding) * 2) + var(--var-input-icon-width));
+    /* padding-inline: calc(calc(var(--var-input-padding) * 2) + var(--var-input-icon-width)); */
+    padding: 0px 40px;
     font-weight: 500;
     font-size: 14px;
     font-style: normal;
@@ -107,7 +108,7 @@
 
 .icon {
     position: absolute;
-    padding-inline: var(--var-input-padding);
+    padding: 0 12px;
     height: var(--var-input-icon-height);
     min-width: var(--var-input-icon-width);
     transform: translate(0, -50%);
@@ -123,7 +124,7 @@
 
 .icon-right {
     position: absolute;
-    padding-inline: var(--var-input-padding);
+    padding: 0 12px;
     height: var(--var-input-icon-height);
     min-width: var(--var-input-icon-width);
     transform: translate(0, -50%);
@@ -137,7 +138,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.wallet-container button{
+.wallet-container button {
     width: 250px;
     height: 50px;
     /* Main Color */
@@ -148,11 +149,11 @@
     border: 0;
 }
 
-.wallet-container button:disabled{
+.wallet-container button:disabled {
     opacity: 0.5;
 }
 
-.wallet-container button span{
+.wallet-container button span {
     width: 70px;
     height: 18px;
 
