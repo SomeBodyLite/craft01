@@ -717,3 +717,10 @@ b {
 .menu__item:hover {
   background-color: #CFD8DC;
 }
+
+@media (max-width:550px) {
+  .listSelect {
+    justify-content: center;
+  }
+
+}
